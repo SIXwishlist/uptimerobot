@@ -10,7 +10,7 @@
   <title>Connectria Add URL</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="css/formCreate.css" rel="stylesheet">
-  <script src="js/statuspage.min.js"></script>
+<!--   <script src="js/formCreate.js"></script> -->
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -19,20 +19,20 @@
 </head>
 
 <body>
-  <form id="add-new-monitor">
-    <label for="apiKey">Api Key:</label>
+  <form id="add-new-monitor" method="POST" action="statuspage/formCreate.php">
+<!--     <label for="apiKey">Api Key:</label>
     <input id="apiKey" name="apiKey" type="text" required>
-    <br/>
-    <label for="monitorFriendlyName">Monitor Name</label>
-    <input id="monitorFriendlyName" name="monitorFriendlyName" type="text" required>
-    <br/>
+    <br/><br/> -->
+    <label for="monitorFriendlyName">Monitor Name:</label>
+    <input id="monitorFriendlyName" name="v_monitorFriendlyName" type="text" required>
+    <br/><br/>
     <label for="monitorURL">URL to monitor:</label>
-    <input id="monitorURL" name="monitorURL" type="text" rquired>
-    <br/>
+    <input id="monitorURL" name="v_monitorURL" type="text" rquired>
+    <br/><br/>
     <label for="monitorType">Monitor Type:</label>
-    <input id="monitorType" name="monitorType" type="number" required min="1" max="4" step="1" value="1">
-    <br/>
-    <input type="submit" value="Add New">
+    <input id="monitorType" name="v_monitorType" type="number" required min="1" max="4" step="1" value="1">
+    <br/><br/>
+    <input id="buttonSubmit" type="submit" value="Add New">
   </form>
 </body>
 

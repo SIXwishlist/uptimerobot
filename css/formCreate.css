@@ -3,12 +3,25 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;            
 }
 
+input#buttonSubmit{
+    width: 80px ! important;
+}
 form#add-new-monitor label{
-    width: 80px;
+    width: 150px;
     display: inline-block;
     margin-right: 10px;
 }
+
 form#add-new-monitor input{
-    width: 150px;
+    width: 450px;
     margin-right: 10px;
+}
+
+form#add-new-monitor :required {
+    border-color: #11b8ff;
+    -webkit-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+    -moz-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+    -o-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+    -ms-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
+    box-shadow: 0 0 5px rgba(17, 184, 255, .75);
 }

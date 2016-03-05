@@ -17,11 +17,11 @@ form#add-new-monitor input{
     margin-right: 10px;
 }
 
-form#add-new-monitor :required {
+/* form#add-new-monitor :required {
     border-color: #11b8ff;
     -webkit-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
     -moz-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
     -o-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
     -ms-box-shadow: 0 0 5px rgba(17, 184, 255, .75);
     box-shadow: 0 0 5px rgba(17, 184, 255, .75);
-}
+} */
